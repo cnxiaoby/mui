@@ -112,7 +112,7 @@
 		getSelectedItems: function() {
 			var self = this;
 			var items = [];
-			for (var i in self.pickers) {
+			for (var i = 0; i < self.pickers.length; i++) {
 				var picker = self.pickers[i];
 				items.push(picker.getSelectedItem() || {});
 			}
